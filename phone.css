@@ -1,0 +1,42 @@
+/* Navigation */
+    /* #navbar{
+        flex-direction: column;
+    } */
+    
+/* Home Section */
+#home{
+    height: 430px;
+}
+#home::before{
+    height: 480px;
+}
+#home p{
+    font-size: 18px;
+}
+.h-primary{
+    font-size: 25px;
+}
+.btn{
+    font-size: 12px;
+}
+
+
+/* Service section */
+#services{
+    flex-direction: column;
+    width: 90%;
+}
+#services .box{
+
+}
+/* Clients section */
+
+/* Contact us section */
+#contact-box form{
+    width: 80%;
+}
+/* Footer */
+
+html{
+    scroll-behavior: smooth;
+}

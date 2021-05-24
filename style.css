@@ -1,0 +1,239 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+/*CSS Variables*/
+/*Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    top: 0px;
+    left: 0px;
+}
+/*Logo and Image*/
+#logo{
+    margin: 0px 35px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 0px 15px;
+}
+/*Navigation Bar : Logo and Image*/
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+
+    align-items: center;
+
+    list-style: none;
+    font-size: 1.3rem;
+ 
+}
+#navbar ul li a{
+     display: block;
+     color: white;
+    padding: 5px 25px;
+    border-radius: 20%;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+
+    color: rgb(22, 19, 19);
+    border-radius: 20px;
+   background-color: rgb(211, 207, 201);
+}
+/*Home Section*/
+#home{
+    display: flex;
+    flex-direction:column;
+    height: 500px;
+    padding: 0px 50px;
+    justify-content: center;
+  /*  margin-top: -100px;*/
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url(./photo/pic1.jpg) no-repeat center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 70%;
+    width: 100%;
+    z-index: -2;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Comic Sans MS;
+}
+/*Services Section*/
+#services{
+    margin: 35px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    margin: 5px;
+    padding: 30px;
+    border-radius: 25px;
+    background-color: rgb(230, 221, 221);
+
+}
+#services .box img{
+    height: 120px;
+    margin: auto;
+    display: block;
+}
+
+/*utility class*/
+.h-primary{
+    font-size: 3rem;
+    padding: 15px;
+    text-align: center;
+    font-family: Showcard Gothic;
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 15px;
+    font-family: Showcard Gothic;
+    text-align: center;
+}
+.btn{
+    padding: 6px 30px;
+    color: #fff;
+    border: 4px solid white;
+    background: black;
+    opacity: 0.8;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: transparent;
+    color: black;
+    border: 4px solid black;
+} 
+.center{
+    color: rgb(11, 48, 78);
+    text-align: center;
+    font-family: Comic Sans MS;
+}
+/*Clint section*/
+#client-section{
+    position: relative;
+    height: 300px;
+    z-index: -1;
+}
+#client-section::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(./photo/pic18.jpg);
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 35px;
+}
+#clients img{
+    height: 130px;
+    
+}
+/* Contact Section */
+#Contact{
+    position: relative;
+    z-index: -1;
+
+}
+#Contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(./photo/floor.jpg);
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+     
+}
+#contact-box input, #contact-box textarea{
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 50%;
+}
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: Comic Sans MS;
+}
+
+
+
+
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+    font-family: Comic Sans MS;
+
+}
+@media(max-width:700px){
+    #navbar{
+        flex-direction: column;
+    }
+    #navbar ul li a{
+        font-size: 1rem;
+        text-align: center;
+    }
+/*Clint section*/
+#client-section{
+    position: relative;
+    height: 140px;
+}
+.client-item{
+    padding: 10px;
+}
+#clients img{
+    height: 30px;
+}
+}
